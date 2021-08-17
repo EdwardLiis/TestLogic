@@ -1,30 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background_circles">
 
-    <Button
-        android:id="@+id/button"
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
-        android:text="Принять Условия"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/back1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="132dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        />
 
-    <Button
-        android:id="@+id/watchAbout"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:text="Посмотреть о программе"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:srcCompat="@drawable/back2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="303dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="372dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="57dp"
+        android:fontFamily="@font/amiko"
+        android:gravity="center_horizontal|top"
+        android:lineHeight="47.26dp"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/predictivec"
+        android:textColor="#2D3556"
+        android:textFontWeight="600"
+        android:textSize="34sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logintext"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="424dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="46dp"
+        android:fontFamily="@font/montserrat"
+        android:textFontWeight="400"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:lineHeight="25sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/askAuth"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="596dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="46dp"
+        android:textAlignment="center"/>
+
+
+    <ImageButton
+        android:id="@+id/facebookAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="625dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/facebook_btn_borders"
+        android:paddingHorizontal="64dp"
+        android:paddingVertical="15dp"
+        app:srcCompat="@drawable/facebook" />
+
+    <Button
+        android:id="@+id/noAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noAuth"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="697dp"/>
+
+    <ImageButton
+        android:id="@+id/googleAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="625dp"
+        android:background="@drawable/bnt_round_corners"
+        android:paddingHorizontal="64dp"
+        android:paddingVertical="15dp"
+        app:srcCompat="@drawable/google" />
+
+</RelativeLayout>

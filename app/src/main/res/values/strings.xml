@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="top_text">Проверка дней рождения</string>
+    <string name="log_text">Выход</string>
+    <string name="donate">Задонатить</string>
+    <string name="share">Поделится с друзьями</string>
+    <string name="about">О программе</string>
+    <string name="title_activity_menu">menu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="predictivec">Predictive<font color='#f5df4d'>Child</font></string>
+    <string name="logintext">Узнайте пол будущего ребенка по датам рождения родителей. В расчетах используется метод, который был популярен у наших бабушек</string>
+    <string name="askAuth">Авторизуйтесь для сохранения расчётов</string>
+    <string name="noAuth">Продолжить без авторизации</string>
 </resources>
