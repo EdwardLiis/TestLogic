@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".MainMenu"
+            android:exported="true" />
+        <activity
+            android:name=".AcceptTerms"
+            android:exported="true" />
+        <activity
             android:name=".menu"
             android:exported="true"
             android:label="@string/title_activity_menu" />
