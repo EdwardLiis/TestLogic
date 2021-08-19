@@ -12,15 +12,17 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
     val auth_key = "IsAuthorized"
     val pref_key = "com.example.myapp.PREFERENCE_FILE_KEY"
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        supportActionBar?.hide()
 
         val sharedPref = getSharedPreferences(pref_key,Context.MODE_PRIVATE)
 
-//        if (sharedPref.getBoolean(auth_key,false)){
-//            val intent = Intent(this,MainMenu::class.java)
-//            startActivity(intent)
-//        }
+        if (sharedPref.getBoolean(auth_key,false)){
+            val intent = Intent(this,MainMenu::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         Toast.makeText(this,"Auth key set to ${sharedPref.getBoolean(auth_key,false)}",Toast.LENGTH_LONG).show()
 
         super.onCreate(savedInstanceState)
@@ -33,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
 
         googleAuth.setOnClickListener{
-            Toast.makeText(this,"Only noAuth implemented(set auth to false",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Only noAuth implemented(set auth to false)",Toast.LENGTH_SHORT).show()
             with(sharedPref.edit()){
                 putBoolean(auth_key,false)
                 apply()
@@ -51,5 +53,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,AcceptTerms::class.java)
             startActivity(intent)
         }
+    }
+
+    override fun onResume() {
+        val sharedPref = getSharedPreferences(pref_key,Context.MODE_PRIVATE)
+        if (sharedPref.getBoolean(auth_key,false)){
+            val intent = Intent(this,MainMenu::class.java)
+            startActivity(intent)
+        }
+        super.onResume()
     }
 }

@@ -10,7 +10,7 @@ class AcceptTerms : AppCompatActivity() {
     val auth_key = "IsAuthorized"
     val pref_key = "com.example.myapp.PREFERENCE_FILE_KEY"
     override fun onCreate(savedInstanceState: Bundle?) {
-        supportActionBar?.hide()
+        //supportActionBar?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_accept_terms)
 

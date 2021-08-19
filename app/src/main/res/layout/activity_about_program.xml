@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutProgram">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="127dp"
+        android:layout_marginTop="56dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textFontWeight="600"
+        android:lineHeight="21sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="183dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/longTextAbout"
+                android:fontFamily="@font/montserrat"
+                android:textFontWeight="400"
+                android:textStyle="normal"
+                android:textSize="17sp"
+                android:lineHeight="24sp"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="22dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+<!--font-family: Montserrat;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+-->
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="101dp"
+        android:id="@+id/loadPolicy"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="@string/ConfPolicy"
+        android:backgroundTint="#B2A4D4"
+        android:fontFamily="@font/montserrat"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textFontWeight="600"
+        android:lineHeight="24sp"
+        android:gravity="center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
